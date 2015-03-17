@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>Jukebox Theater - The Fantasticks</title>
+        
+        <style>
+            body {
+                background: #4e2977;
+                font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                font-size: 16px;
+            }
+            
+            * {
+                box-sizing: border-box;
+            }
+            
+            header {
+                background: url('images/thefantasticks.jpg');
+                background-size: 100% auto;
+                height: 220px;
+                width: 480px;
+                position: relative;
+                left: 50%;
+                margin-left: -240px;
+            }
+            
+            .content {
+                background: #FFF;
+                width: 360px;
+                left: 50%;
+                margin-left: -180px;
+                margin-top: 50px;
+                position: relative;
+                border-radius: 5px;
+                padding: 20px 20px 3px 20px;
+                box-shadow: 0px 2px 5px rgba(0,0,0,.5);
+            }
+            
+            h1 {
+                font-family: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+                font-weight: 300;
+                font-size: 50px;
+                text-align: center;
+                padding: 0px;
+                margin: 0px 0px 15px 0px;
+                line-height: 46px;
+            }
+            
+            input[type="submit"] {
+                border-radius: 5px;
+                background: #4e2977;
+                border: 1px solid transparent;
+                padding: 10px 20px;
+                width: 100%;
+                font-size: 17px;
+                color: #FFF;
+                text-align: center;
+            }
+            input[type="submit"]:hover {
+                background: #3D1D63;
+            }
+            input[type="submit"]:active {
+                background: #301452;
+            }
+            
+            table {
+                background: #F1F1F1;
+                border-radius: 5px;
+                width: 100%;
+                padding: 5px;
+                margin: 10px 0px;
+            }
+            table td {
+                padding: 5px;
+                width: 50%;
+            }
+            
+            table select { 
+                width: 100%; 
+                font-size: 20px;
+            }
+            
+            p { text-align: center; }
+            
+        </style>
+    </head>
+    <body>
+        <header></header>
+        <section class="content">
+            <h1>Tickets</h1>
+            <p>Select a date below to purchase tickets for The Fantasticks, a Wheaton College Jukebox Theater production.</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="GUYEVQE3HWWTG">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="hidden" name="on0" value="Dates">Date
+                        </td>
+                        <td>
+                            <select name="os0">
+                                <option value="March 25">March 25</option>
+                                <option value="March 26">March 26</option>
+                                <option value="March 27">March 27</option>
+                            </select> 
+                        </td>
+                    </tr>
+                </table>
+                <input type="submit" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+            </form>
+
+        </section>
+    </body>
+</html>
+
+
