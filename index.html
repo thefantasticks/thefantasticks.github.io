@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>Jukebox Theater - The Fantasticks</title>
-        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
             body {
                 background: #4e2977;
@@ -68,6 +68,7 @@
                 width: 100%;
                 padding: 5px;
                 margin: 10px 0px;
+                float: left;
             }
             table td {
                 padding: 5px;
@@ -80,6 +81,18 @@
             }
             
             p { text-align: center; }
+            
+            @media only screen and (max-width: 420px), only screen and (max-device-width: 420px) {
+                
+                header, .content {
+                    width: 300px;
+                    margin-left: -150px;
+                }
+                
+                header {
+                    height: 140px;
+                }
+            }
             
         </style>
     </head>
